@@ -1,9 +1,9 @@
 import pandas as pd
 from datetime import datetime
 
-# Read the Excel file
-file_path = 'data.xlsx'
-df = pd.read_excel(file_path)
+# Read the CSV file
+file_path = 'data.csv'  # Update the file extension and path accordingly
+df = pd.read_csv(file_path)
 
 # Convert date strings to datetime objects
 df['x'] = pd.to_datetime(df['x_column'], format='%d/%m/%Y')
